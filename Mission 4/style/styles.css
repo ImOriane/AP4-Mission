@@ -50,6 +50,11 @@
 
 }
 
+.home:hover{
+    transform: scale(1.1);
+
+
+}
 .boutonsbar{
     padding: 150px 20px; /* Augmente l'espacement en haut */
     display: flex;

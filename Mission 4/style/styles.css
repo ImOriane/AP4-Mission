@@ -1,0 +1,178 @@
+/* CSS */
+
+
+@font-face {
+	font-family: 'Tommy';
+	src: url('../font/made_tommy.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'TommyLight';
+	src: url('../font/made_tommy_light.otf') format('opentype');
+}
+
+
+/* Fond principal avec un dégradé du bleu foncé au vert */
+.background {
+    background: linear-gradient(to bottom, #3B556D, #5FC2BA);
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    display: flex; /* Flexbox pour organiser les enfants (barre latérale et contenu) en ligne */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Rectangle central */
+.main-container {
+    background: #EBEBEB; /* Couleur de fond blanche */
+    border-radius: 15px; /* Coins arrondis */
+    display: flex;
+    width: 80%; /* Largeur relative à l'écran */
+    height: 80%; /* Hauteur relative à l'écran */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Barre latérale */
+.sidebar {
+    background: #0B162C; /* Couleur bleue foncée */
+    width: 20%; /* Largeur de la barre latérale */
+    border-top-left-radius: 15px; /* Coin arrondi en haut */
+    border-bottom-left-radius: 15px; /* Coin arrondi en bas */
+    
+}
+
+.home{
+    width: 40px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 15px;
+    
+
+
+}
+
+.boutonsbar{
+    padding: 150px 20px; /* Augmente l'espacement en haut */
+    display: flex;
+    flex-direction: column; /* Empile les boutons verticalement */
+    gap: 20px; /* Espacement entre les boutons */
+
+}
+
+
+
+/* Boutons de la barre latérale */
+.sidebar-btn {
+    font-family: 'Tommy';
+    background: #EBEBEB; /* Couleur de fond blanche */
+    border: none; /* Supprime les bordures */
+    border-radius: 20px; /* Coins légèrement arrondis */
+    padding: 10px; /* Réduit l'épaisseur du bouton */
+    font-size: 16px; /* Taille du texte */
+    cursor: pointer; /* Curseur interactif */
+    transition: background 0.3s; /* Animation pour hover */
+}
+
+.sidebar-btn:hover {
+    background: #5FC2BA; /* Change de couleur au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+/* Section droite */
+.content {
+    flex: 1; /* Prend tout l'espace restant */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+}
+
+/* Titre principal */
+.content h1 {
+    font-family:'TommyLight';
+    padding: 55px;
+    font-size: 60px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.content-GBB-Ligue{
+    flex: 1; /* Prend tout l'espace restant */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+}
+
+.content-GBB-Ligue h1 {
+    padding: 55px;
+    font-size: 60px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.content-GBB-Ligue p {
+    font-size: 25px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
+
+.content-GBB-Prestation{
+    flex: 1; /* Prend tout l'espace restant */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+}
+
+.content-GBB-Prestation h1 {
+    padding: 55px;
+    font-size: 60px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.content-GBB-Prestation p {
+    font-size: 25px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
+
+
+/* Cartes */
+.cards {
+    display: flex;
+    padding: 25px;
+    justify-content: center; /* Centre les cartes horizontalement */
+    gap: 60px; /* Espacement entre les cartes */
+}
+
+/* Style de chaque carte */
+.card {
+    background: white; /* Fond gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 30px; /* Espacement interne */
+    width: 150px; /* Largeur fixe */
+    text-align: center; /* Centre le contenu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s; /* Animation pour hover */
+    }
+
+.card:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+    background: #5FC2BA; /* Change de couleur au survol */
+    color: #EBEBEB; /* Texte blanc au survol */
+    /*transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(70%);*/
+}
+
+/* Icônes dans les cartes */
+.card img {
+    width: 120px; /* Taille fixe de l'icône */
+    height: auto; /* Conserve les proportions */
+    margin-bottom: 10px; /* Espacement sous l'icône */
+}
+
+/* Texte dans les cartes */
+.card p {
+    font-size: 20px;
+    color: #112240; /* Même bleu que le titre */
+    font-family: "Tommy";
+     text-decoration: none;
+
+}
+
+

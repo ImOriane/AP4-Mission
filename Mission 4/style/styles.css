@@ -113,7 +113,7 @@ h1 {
 
 .content-GBB-Prestation{
     flex: 1; /* Prend tout l'espace restant */
-    padding: 54px; /* Espacement interne */
+    padding: 15px; /* Espacement interne */
     text-align: center; /* Centre le texte */
 }
 
@@ -186,6 +186,22 @@ h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
 }
 
+
+.formulairepresta {
+    font-family: "tommy";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    transform:scale(0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+}
+
 .formbutton{
 
     text-decoration: none;
@@ -208,6 +224,17 @@ h1 {
 }
 
 .formulaire input {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Empêche le débordement */
+}
+
+.formulairepresta input {
     width: 100%; /* Prend toute la largeur */
     padding: 10px;
     margin-top: 5px;

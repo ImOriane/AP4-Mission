@@ -244,3 +244,24 @@ h1 {
     font-size: 1em;
     box-sizing: border-box; /* Empêche le débordement */
 }
+
+.bouton-imprimer {
+    padding-bottom: 60px;
+    background-color: #112240; /* Couleur de fond sombre */
+    color: white; /* Texte blanc */
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    padding: 28px 53px; /* Ajuste l'espacement interne */
+    border: none;
+    border-radius: 50px; /* Bordures arrondies */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Effet au survol */
+.bouton-imprimer:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}

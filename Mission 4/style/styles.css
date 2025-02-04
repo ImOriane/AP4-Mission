@@ -103,7 +103,7 @@ body {
 }
 .contentfacture {
     display:flex;
-    padding: 30px; /* Espacement interne */
+    padding: 0px; /* Espacement interne */
     text-align: center; /* Centre le texte */
     justify-content: center;
     margin: 0 auto;
@@ -291,7 +291,7 @@ h1 {
     box-sizing: border-box; /* Empêche le débordement */
 }
 .bouton-imprimer {
-    padding-bottom: 60px;
+    margin-top: 20px;
     background-color: #112240; /* Couleur de fond sombre */
     color: white; /* Texte blanc */
     font-size: 1em;
@@ -317,11 +317,13 @@ td{
 }
 
 table{
-    
+    background-color: white;
     border: 3px solid #112240;
     text-align: center;
     scale: 1;
     width:980px;
+    font-family: "Tommy";
+
 }
 h6{
     color: rgb(0, 0, 117);
@@ -329,19 +331,13 @@ h6{
     text-align: center;
 }
 
-h3{
-    text-align: center;
-    color: blue;
-    font-size: 40px;
-}
 
-hr{
-   border: px solid rgb(13, 218, 13);
 
-}
 
 th{
-    font-style: bold;
+    background-color: #112240;
+    font-family: 'Tommy';
+    color: #EBEBEB;
     border: 1px solid #112240;
     padding: 15px;
 }
@@ -352,6 +348,36 @@ th{
     align-items: center;
 }
 
-#searchbar{
-    width:995px;
+#searchBar{
+    width: 950px;
 }
+
+.search {
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: ;
+    color: #0B162C;
+    background-color: transparent;
+
+
+}
+
+.search:hover {
+    padding: 6px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.search:placeholder{
+    color: color(#575756 a(0.8));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+   
+

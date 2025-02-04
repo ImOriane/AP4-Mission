@@ -93,6 +93,22 @@ body {
     padding: 20px; /* Espacement interne */
     text-align: center; /* Centre le texte */
 }
+.contentfacture {
+    display:flex;
+    padding: 30px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.contentfacture {
+    display:flex;
+    padding: 30px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
 
 /* Titre principal */
 h1 {
@@ -104,17 +120,23 @@ h1 {
 }
 
 .content-GBB-Ligue{
-    flex: 1; /* Prend tout l'espace restant */
-    padding: 54px; /* Espacement interne */
+    display:flex;
+    padding: 20px; /* Espacement interne */
     text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
 }
 
 
 
 .content-GBB-Prestation{
-    flex: 1; /* Prend tout l'espace restant */
-    padding: 15px; /* Espacement interne */
+    display:flex;
+    padding: 20px; /* Espacement interne */
     text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
 }
 
 
@@ -202,6 +224,20 @@ h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
 }
 
+.formulairefacture {
+    font-family: "tommy";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    transform:scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+}
+
+
 .formbutton{
 
     text-decoration: none;
@@ -244,7 +280,16 @@ h1 {
     font-size: 1em;
     box-sizing: border-box; /* Empêche le débordement */
 }
-
+.formulairefacture input {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Empêche le débordement */
+}
 .bouton-imprimer {
     padding-bottom: 60px;
     background-color: #112240; /* Couleur de fond sombre */
@@ -264,4 +309,49 @@ h1 {
 .bouton-imprimer:hover {
     transform: scale(1.05);
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+td{
+    border: 1px solid #112240;
+    padding: 10px;
+}
+
+table{
+    
+    border: 3px solid #112240;
+    text-align: center;
+    scale: 1;
+    width:980px;
+}
+h6{
+    color: rgb(0, 0, 117);
+    font-size: 50px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+}
+
+hr{
+   border: px solid rgb(13, 218, 13);
+
+}
+
+th{
+    font-style: bold;
+    border: 1px solid #112240;
+    padding: 15px;
+}
+
+.centrerfacture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchbar{
+    width:995px;
 }

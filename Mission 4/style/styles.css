@@ -210,8 +210,10 @@ h1 {
 
 
 .formulairepresta {
+    box-sizing: content-box;
     font-family: "tommy";
-    display: flex;
+    flex-grow: 1;
+    display:flex 1;
     align-items: center;
     justify-content: center;
     padding: 48px;
